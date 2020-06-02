@@ -1,0 +1,38 @@
+
+<ion-content class="pop1-over">
+  <ion-list>
+
+    <ion-list-header>4 Mesajınız var</ion-list-header>
+
+    <ion-item start class="background1">
+      <p>
+        <ion-col><ion-icon name="notifications" color="dark"></ion-icon></ion-col>
+        Sunucu bekleniyor..
+      </p>
+    </ion-item>
+
+
+    <ion-item class="background2">
+      <p>
+        <ion-col><ion-icon name="notifications" color="dark"></ion-icon></ion-col>
+        Sunucu yüklenirken hata olustu.
+      </p>
+    </ion-item>
+
+
+    <ion-item class="background3">
+      <p>
+        <ion-col><ion-icon name="notifications" color="dark"></ion-icon></ion-col>
+        Dosya yükleme işlemi tamamlandı.
+      </p>
+    </ion-item>
+
+
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <button ion-button color="light"  class="pop-button">Tüm Bildirimi Gör</button>
+      </button>
+    </ion-buttons>
+
+  </ion-list>
+

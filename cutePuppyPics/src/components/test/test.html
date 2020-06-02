@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <h1>
+      <ion-col><ion-icon name="add" color="primary" class="attention-icon"></ion-icon></ion-col>
+      Add New Country
+    </h1>
+
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <ion-col><ion-icon name="close" color="primary" class="attention-icon"></ion-icon></ion-col>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <div class="container">
+
+    <div class="jumbotron" style='background:white;border:1px solid #dfdfdf;padding:20px;'>
+
+    <div class='row'>
+    <div class='col-xs-6'>
+      <ion-label stacked>Country Id</ion-label>
+      <ion-input type="text"></ion-input>
+    </div>
+  </div>
+
+
+  <div class='row'>
+    <div class='col-xs-6'>
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </div>
+  </div>
+
+
+  <div class='row'>
+    <div class='col-xs-6'>
+      <ion-label stacked>ISO Code</ion-label>
+      <ion-input type="text"></ion-input>
+    </div>
+  </div>
+
+
+  <div class='row'>
+    <div class='col-xs-6'>
+      <ion-label stacked>Domain Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </div>
+  </div>
+
+
+  <div class='row'>
+    <div class='col-xs-6'>
+      <ion-label stacked>Phone(Domain Name)</ion-label>
+      <ion-input type="text"></ion-input>
+    </div>
+  </div>
+
+  <ion-buttons left>
+    <button ion-button color="light" (click)="saveMethod($event)" class="button-state">
+      <ion-icon name="checkmark"></ion-icon>
+      Save
+      </button>
+    <p>{{values}}</p>
+  </ion-buttons>
+
+  <ion-buttons right>
+    <button ion-button color="light" (click)="dismiss()" class="button-state">
+      <ion-icon name="close"></ion-icon>
+      CANCEL
+    </button>
+  </ion-buttons>
+
+    </div>
+  </div>
+</ion-content>

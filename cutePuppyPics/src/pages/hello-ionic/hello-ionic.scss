@@ -1,0 +1,100 @@
+.login-title{
+  padding-top: 75px;
+  padding-bottom: 45px;
+
+}
+
+.login-title .toolbar-title-ios{
+  font-size: 22px;
+  color:#4f2a55;
+}
+
+.login-list .list-ios > .item-block:first-child {
+  border-top:none;
+}
+
+ion-label span{
+  margin-left: 10px;
+  top: 17px;
+  position: absolute;
+}
+
+.login-main .default-btn{
+  background:#4f2a55;
+  color:#fff;
+}
+
+.scroll-content{
+  padding: 15px;
+}
+
+.login-main{
+  background: #fff;
+}
+
+.login-list .login-input{
+  border-top:none;
+  background: none;
+}
+
+.footer-top .toolbar-background-ios{
+  background: #fff;
+
+}
+
+.footer-top .toolbar-title-ios{
+  color: #4f2a55;
+  font-size: 15px;
+}
+
+.login-list .item-block:first-child{
+  border:none;
+}
+
+.login-list .login-input .item-inner{
+  border-bottom: 2px solid #4f2a55;
+}
+
+.login-list .item-block:last-child{
+  border-bottom: 2px solid #4f2a55;
+}
+
+.login-list .item-ios{
+  padding-left: 0px;
+}
+
+.footer-bottom .toolbar-background-ios{
+  background: #fff;
+
+}
+
+.footer-top .toolbar-title-ios{
+  color: #4f2a55;
+  font-size: 15px;
+}
+
+.footer-bottom .toolbar-title-ios{
+  color: #4f2a55;
+  font-size: 15px;
+  border-top: none;
+}
+
+.footer-title .toolbar-title-ios{
+  border-bottom: 1px solid #4f2a55;
+}
+
+.footer-top{
+  margin-top: 90px;
+  width: 100%;
+  position: absolute;
+  margin-left: -30px;
+}
+
+.footer-bottom .toolbar-background-ios{
+  border:none;
+}
+
+.footer-bottom .toolbar-title-ios{
+  font-size: 12px;
+  margin-top: 10px;
+}

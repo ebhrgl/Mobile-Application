@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <h1>
+      <ion-col><ion-icon name="sync" color="primary" class="attention-icon"></ion-icon></ion-col>
+      Update Country
+    </h1>
+
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <ion-col><ion-icon name="close" color="primary" class="attention-icon"></ion-icon></ion-col>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-item>
+    <ion-label stacked>Country ID</ion-label>
+    <ion-input [(ngModel)]="items.id" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked> Name</ion-label>
+    <ion-input [(ngModel)]="items.name" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked> ISO Code</ion-label>
+    <ion-input [(ngModel)]="items.iso" ></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label stacked> Domain Name</ion-label>
+    <ion-input [(ngModel)]="items.domain" ></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label stacked> Phone</ion-label>
+    <ion-input [(ngModel)]="items.phone" ></ion-input>
+  </ion-item>
+
+  <ion-buttons right>
+    <button ion-button color="light" class="button-state" (click)="dismiss()">
+      <ion-icon name="close"></ion-icon>
+      Cancel
+    </button>
+  </ion-buttons>
+
+  <ion-buttons left>
+    <button ion-button color="light" (click)="dismiss()"  class="button-state">
+      <ion-icon name="sync"></ion-icon>
+      Update
+    </button>
+  </ion-buttons>
+
+</ion-content>

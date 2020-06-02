@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+
+    <h1 >
+      <ion-col><ion-icon name="search" color="primary" class="attention-icon"></ion-icon></ion-col>
+      Search
+    </h1>
+
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <ion-col><ion-icon name="close" color="primary" class="attention-icon"></ion-icon></ion-col>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+

@@ -1,0 +1,117 @@
+
+.fab-ios {
+  color:  #fff;
+  background-color:#4f2a55;
+}
+
+.bar-button-menutoggle-ios {
+  margin: 0 6px;
+  padding: 0;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  min-width: 36px;
+  background-color:#4f2a55;
+  color:  #fff;
+}
+
+
+.hoverTable{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.hoverTable td{
+  padding:5px; border: #ffffff 0px solid;
+
+}
+
+.hoverTable tr{
+  background: #ffffff;
+}
+.hoverTable tr:hover {
+  background-color: #e8d5ff;
+
+}
+
+.button-ios {
+  border-radius: 4px;
+  height: 2.8em;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #f8f8f8;
+  padding: 0 1em;
+  float: right;
+}
+.button-ios {
+  border-radius: 4px;
+  height: 2.8em;
+  font-size: 1.6rem;
+  color: #101010;
+  background-color: #F8F8F9;
+  padding: 0 1em;
+  float: right;
+}
+
+ion-icony::before {
+  display: inline-block;
+  color: #ffffff;
+}
+
+
+
+
+.menu-list .item-block .item-inner{
+  border-bottom:1px solid #4f2a55;
+
+}
+
+.menu-list .item-block:first-child{
+  border-top:none;
+
+}
+
+.menu-list .item-block:last-child{
+  border-bottom:none;
+
+}
+
+.menu-list .icon-ios-dark{
+  color:#4f2a55;
+
+}
+
+.header-btn {
+  float: left;
+
+}
+
+.header-top .fab[mini]{
+  margin-top:-5px;
+  background: #fff;
+  color: #4f2a55;
+}
+
+.header-title{
+  text-align: center;
+}
+
+.header-title span{
+  font-size: 16px;
+  color: #fff;
+}
+
+.header .toolbar-background-ios{
+  background:#4f2a55;
+}
+
+
+.menu-list span{
+  position: inherit;
+  margin-left: 0px;
+  margin-top:-35px;
+}
+.main {
+  background: #fff;
+}

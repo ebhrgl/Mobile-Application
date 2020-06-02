@@ -1,0 +1,58 @@
+<ion-content>
+
+  <ion-header>
+    <ion-toolbar>
+
+      <h1 >
+        <ion-col><ion-icon name="menu" color="primary" class="attention-icon"></ion-icon></ion-col>
+        State Menu
+      </h1>
+
+      <ion-buttons end>
+        <button ion-button (click)="dismiss()">
+          <ion-col><ion-icon name="close" color="light" class="attention-icon"></ion-icon></ion-col>
+        </button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Country ID</ion-label>
+      <ion-checkbox ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ISO Code</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Domain Name</ion-label>
+      <ion-checkbox  checked="true" ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Phone(Domain name)</ion-label>
+      <ion-checkbox  checked="true"></ion-checkbox>
+    </ion-item>
+
+
+    <ion-buttons right>
+      <button ion-button class="button-state" color="light" (click)="dismiss()">
+        <ion-icon  name="close"></ion-icon>
+        CANCEL
+      </button>
+    </ion-buttons>
+
+  </ion-list>
+
+</ion-content>

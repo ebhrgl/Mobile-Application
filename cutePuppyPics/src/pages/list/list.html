@@ -1,0 +1,136 @@
+<ion-header class="header">
+
+  <ion-navbar>
+    <ion-row>
+      <ion-col width-100 class="header-title"><span>PROJECT <b>X</b></span></ion-col>
+    </ion-row>
+
+    <ion-row class="header-top">
+      <ion-col col-3>
+        <button ion-button menuToggle class="header-btn" >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-col>
+
+
+      <ion-col col-7>
+        <button ion-fab mini class="header-btn" (click)="presentPopover()"><ion-icon name="mail"></ion-icon></button>
+        <button ion-fab mini class="header-btn" (click)="presentPopover2()"><ion-icon name="notifications"></ion-icon></button>
+        <button ion-fab mini class="header-btn" (click)="presentPopover3()"><ion-icon name="list"></ion-icon></button>
+      </ion-col>
+
+
+      <ion-col col-2>
+        <button ion-fab mini class="header-btn" (click)="presentPopover4()"><ion-icon name="person"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+
+  </ion-navbar>
+</ion-header>
+
+  <ion-content class="main">
+    <table>
+      <tr>
+        <h6>Country List</h6>
+      </tr>
+    </table>
+
+
+  <table class="hoverTable">
+    <tr *ngFor="let item of countries" (click)="presentUpdate(item)">
+      <td>
+      <h6>Country ID</h6>
+      <h6>Name</h6>
+      <h6>ISO Code</h6>
+      <h6>Domain Name</h6>
+      <h6>Phone</h6>
+
+      </td><td>
+      <h6>{{ item.id }}</h6>
+      <h6>{{ item.name }}</h6>
+      <h6>{{ item.iso }}</h6>
+      <h6>{{ item.domain }}</h6>
+      <h6>{{ item.phone }}</h6>
+      </td>
+    </tr>
+  </table>
+
+
+
+    <table class="hoverTable">
+      <tr *ngFor="let item of countries" (click)="presentUpdate(item)">
+        <td>
+          <h6>Country ID</h6>
+          <h6>Name</h6>
+          <h6>ISO Code</h6>
+          <h6>Domain Name</h6>
+          <h6>Phone</h6>
+
+        </td><td>
+        <h6>{{ item.id }}</h6>
+        <h6>{{ item.name }}</h6>
+        <h6>{{ item.iso }}</h6>
+        <h6>{{ item.domain }}</h6>
+        <h6>{{ item.phone }}</h6>
+      </td>
+      </tr>
+    </table>
+
+
+    <table class="hoverTable">
+      <tr *ngFor="let item of countries" (click)="presentUpdate(item)">
+        <td>
+          <h6>Country ID</h6>
+          <h6>Name</h6>
+          <h6>ISO Code</h6>
+          <h6>Domain Name</h6>
+          <h6>Phone</h6>
+
+        </td><td>
+        <h6>{{ item.id }}</h6>
+        <h6>{{ item.name }}</h6>
+        <h6>{{ item.iso }}</h6>
+        <h6>{{ item.domain }}</h6>
+        <h6>{{ item.phone }}</h6>
+      </td>
+      </tr>
+    </table>
+
+  <ion-list no-lines class="menu">
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item }}
+      </button>
+    </ion-list>
+
+  <!-- Real floating action button, fixed. It will not scroll with the content -->
+
+        <ion-fab right bottom >
+          <button ion-fab><ion-icon name="options"></ion-icon></button>
+          <ion-fab-list side="top" class="menu-list">
+
+            <button ion-item (click)="openModal({charNum: 0})">
+              <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+            </button>
+
+            <button ion-item (click)=" presentUpdate({charNum: 0})">
+            <button ion-fab mini color="default"><ion-icon name="create"></ion-icon></button>
+            </button>
+
+            <button ion-item (click)="presentAttention()">
+              <button ion-fab mini color="default"><ion-icon name="close"></ion-icon></button>
+            </button>
+
+            <button ion-item (click)="presentSearch()">
+            <button ion-fab mini color="default"><ion-icon name="search"></ion-icon></button>
+            </button>
+
+            <button ion-item (click)="presentState({charNum: 0})">
+              <button ion-fab mini color="default"><ion-icon name="list"></ion-icon></button>
+            </button>
+
+          </ion-fab-list>
+        </ion-fab>
+
+
+</ion-content>
+

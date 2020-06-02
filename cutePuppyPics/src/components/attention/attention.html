@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+
+    <h1>
+     <ion-icon name="warning" color="primary" class="attention-icon"></ion-icon>
+    Attention Please
+    </h1>
+
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <ion-col><ion-icon name="close" color="primary" class="attention-icon"></ion-icon></ion-col>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>
+        <ion-col><ion-icon name="warning" color="primary"></ion-icon></ion-col>
+        The User Profile will be deleted.Are you sure
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-buttons left>
+    <button ion-button color="light" (click)="dismiss()"  class="button-state">
+      <ion-icon name="close"></ion-icon>
+        Cancel
+    </button>
+  </ion-buttons>
+
+
+  <ion-buttons right>
+      <button ion-button color="light" (click)="dismiss()"  class="button-state">
+        <ion-icon name="checkmark"></ion-icon>
+        Save
+    </button>
+  </ion-buttons>
+
+</ion-content>
