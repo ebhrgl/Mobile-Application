@@ -2,11 +2,11 @@
 # http://git-scm.com/docs/gitignore
 
 *~
+*.html linguist-detectable=false
 *.sw[mnpcod]
 *.log
 *.tmp
 *.tmp.*
-*.html linguist-detectable=false
 log.txt
 *.sublime-project
 *.sublime-workspace
